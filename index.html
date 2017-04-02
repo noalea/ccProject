@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consumer Centre Inc. Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="part-one">
+        <h2 class="map-header pointer active">Select Your Province</h2>
+        <div class="map-container">
+          <img src="images/map_canada.png" alt="" usemap="#Map" class="map" />
+          <map name="Map" id="Map">
+            <area alt="" title="" id="Yukon" shape="poly" coords="162,194,212,121,219,133,212,151,217,160,214,168,217,171,214,178,216,190,214,208,218,218,218,227,227,232,227,238,166,204" />
+            <area alt="" title="" id="British-Columbia" shape="poly" coords="166,206,243,246,223,307,242,340,244,352,193,336,177,308,176,272,187,259,179,218,167,220" />
+            <area alt="" title="" id="Alberta" shape="poly" coords="265,358,286,260,246,247,224,304,241,339,242,351" />
+            <area alt="" title="" id="Saskatchewan" shape="poly" coords="266,359,289,262,322,267,315,367" />
+            <area alt="" title="" id="Manitoba" shape="poly" coords="316,367,327,269,355,268,356,279,367,281,368,292,385,299,352,338,350,370" />
+            <area alt="" title="" id="Ontario" shape="poly" coords="353,373,354,337,385,300,407,314,423,314,426,333,438,350,445,386,466,401,476,394,468,410,450,416,449,421,447,428,432,433,437,408,445,410,442,400,418,395,413,383,406,381,405,375,396,375,385,382" />
+            <area alt="" title="" id="Quebec" shape="poly" coords="441,347,445,339,435,319,448,304,446,288,435,280,440,266,433,241,453,239,475,250,481,265,491,272,498,253,516,297,502,299,505,318,519,327,560,312,553,332,516,344,513,353,524,349,532,355,510,370,499,396,479,398,460,394,446,387" />
+            <area alt="" title="" id="Nunavut" shape="poly" coords="326,262,329,222,269,171,275,156,267,121,305,70,348,58,375,30,403,8,431,8,420,55,411,93,409,117,490,181,487,237,433,217,400,209,424,230,405,235,392,228,375,241,360,270" />
+            <area alt="" title="" id="Northwest-Territories" shape="poly" coords="227,239,228,229,218,226,216,156,210,151,218,132,247,134,275,153,271,170,327,223,325,264" />
+            <area alt="" title="" id="New-Brunswick" shape="poly" coords="511,366,532,359,537,370,528,387" />
+            <area alt="" title="" id="Newfoundland-and-Labrador" shape="poly" coords="498,249,519,298,522,303,513,308,515,301,502,301,501,306,519,327,559,308,565,313,562,354,584,343,586,351,593,344,598,344,602,339,593,326,585,319,579,325,571,311,564,294,549,287,526,280" />
+            <area alt="" title="" id="Nova-Scotia" shape="poly" coords="559,360,559,368,550,375,540,378,533,391,537,400,559,376,566,368" />
+            <area alt="" title="" id="Prince-Edward-Island" shape="poly" coords="539,365,550,365,550,370,537,368" />
+          </map>
+          <!-- Outlines -->
+          <div id="British-Columbia" class="below"></div>
+          <div id="Yukon" class="below"></div>
+          <div id="Alberta" class="below"></div>
+          <div id="Manitoba" class="below"></div>
+          <div id="New-Brunswick" class="below"></div>
+          <div id="Newfoundland-and-Labrador" class="below"></div>
+          <div id="Nova-Scotia" class="below"></div>
+          <div id="Nunavut" class="below"></div>
+          <div id="Northwest-Territories" class="below"></div>
+          <div id="Ontario" class="below"></div>
+          <div id="Prince-Edward-Island" class="below"></div>
+          <div id="Quebec" class="below"></div>
+          <div id="Saskatchewan" class="below"></div>
+        </div>
+      </div>
+      <div class="part-two">
+        <h2 class="form-header pointer">Contact Form</h2>
+        <form action="php/form.php" class="form">
+          <div>
+            <p class="name">YOUR NAME</p>
+            <input required type="text" name="name" value="">
+          </div>
+          <div class="spacer"></div>
+          <div>
+            <p class="email">EMAIL ADDRESS</p>
+            <input required type="email" name="email" value="">
+          </div>
+          <div>
+            <p class="telephone">PHONE NUMBER</p>
+            <input required type="text" name="telephone" value="">
+          </div>
+          <div class="spacer"></div>
+          <div>
+            <p class="province">PROVINCE</p>
+            <input readonly type="text" name="province" value="">
+          </div>
+          <div class="clear"></div>
+          <p class="comments">COMMENTS</p>
+          <textarea name="comments" class="input-long"></textarea>
+          <button type="submit" class="pointer" name="button">Get Funding Info</button>
+          <div class="sent-msg">Thank you for getting in touch with us. We will be in touch with you shortly.</div>
+        </form>
+
+      </div>
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>

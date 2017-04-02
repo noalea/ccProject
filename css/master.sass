@@ -1,0 +1,230 @@
+$baby-blue: #D0EBFD
+$white: #fff
+$black: #000
+$btn: #d74e44
+$btn-shadow: #9b3135
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-transition: all 0.5s ease
+  -moz-transition: all 0.5s ease
+  -ms-transition: all 0.5s ease
+  transition: all 0.5s ease
+
+// MAKE PARTIALS!!!!!
+
+body, html
+  margin: 0
+  padding: 0
+  font-family: 'Quicksand', sans-serif
+  font-weight: 500
+
+  .pointer
+    cursor: pointer
+  .below
+    z-index: 1
+  .active
+    border-bottom: 3px solid black
+    padding: 10px 20px
+    display: inline-block
+
+  .container
+    width: 630px
+    margin: 0 auto
+    h2
+      font-weight: 500
+    .map-container
+      position: relative
+      img
+        position: relative
+        z-index: 2
+      // Align all province images with map image
+      #British-Columbia
+        background: url("../images/bc.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -168px
+        top: 211px
+        position: absolute
+        display: none
+      #Yukon
+        background: url("../images/yukon.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -160px
+        top: 119px
+        position: absolute
+        display: none
+      #Manitoba
+        background: url("../images/manitoba.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -316px
+        top: 266px
+        position: absolute
+        display: none
+      #New-Brunswick
+        background: url("../images/new_brunswick.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -510px
+        top: 358px
+        position: absolute
+        display: none
+      #Newfoundland-and-Labrador
+        background: url("../images/newfoundland_labrador.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -497px
+        top: 248px
+        position: absolute
+        display: none
+      #Nova-Scotia
+        background: url("../images/nova_scotia.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -531px
+        top: 358px
+        position: absolute
+        display: none
+      #Nunavut
+        background: url("../images/nunavut.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -266px
+        top: 5px
+        position: absolute
+        display: none
+      #Northwest-Territories
+        background: url("../images/nwt.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -211px
+        top: 131px
+        position: absolute
+        display: none
+      #Ontario
+        background: url("../images/ontario.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -351px
+        top: 300px
+        position: absolute
+        display: none
+      #Prince-Edward-Island
+        background: url("../images/pei.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -536px
+        top: 366px
+        position: absolute
+        display: none
+      #Quebec
+        background: url("../images/quebec.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -432px
+        top: 238px
+        position: absolute
+        display: none
+      #Saskatchewan
+        background: url("../images/sask.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -265px
+        top: 260px
+        position: absolute
+        display: none
+      #Alberta
+        background: url("../images/alberta.png") no-repeat
+        width: 100%
+        height: 100%
+        right: -223px
+        top: 246px
+        position: absolute
+        display: none
+    .part-two
+      position: relative
+      .form
+        width: 100%
+        height: 0px
+        background-color: $white
+        overflow: hidden
+        textarea
+          min-height: 100px
+        input, textarea
+          padding: 10px
+          margin-bottom: 15px
+          background-color: $baby-blue
+          border-radius: 5px
+          border: 0
+          max-width: 100%
+          -webkit-box-shadow: inset 0px 3px 5px 0px rgba(202,218,229,1)
+          -moz-box-shadow: inset 0px 3px 5px 0px rgba(202,218,229,1)
+          box-shadow: inset 0px 3px 5px 0px rgba(202,218,229,1)
+          font-family: 'Quicksand', sans-serif
+          font-weight: 500
+          font-size: 16px
+        input:focus, textarea:focus
+          outline: none
+          -webkit-box-shadow: inset 0px 4px 5px 0px rgba(179, 200, 214,1)
+          -moz-box-shadow: inset 0px 4px 5px 0px rgba(179, 200, 214,1)
+          box-shadow: inset 0px 4px 5px 0px rgba(179, 200, 214,1)
+        p
+          font-weight: 600
+          font-size: 14px
+          margin-bottom: 5px
+        .spacer
+          width: 6%
+          display: inline-block
+          height: 10px
+        .clear
+          display: flex
+          display: -webkit-flex
+          float: none
+        div
+          display: inline-block
+          width: 47%
+          float: left
+          input, textarea
+            width: 100%
+          input[type=email]
+            padding-right: 10px
+          input[type=text]
+            padding-left: 10px
+        .input-long
+          display: block
+          width: 100%
+          transition: none
+        button
+          background-color: $btn
+          -webkit-box-shadow: 0px 3px 0px 0px rgba(155,49,53,1)
+          -moz-box-shadow: 0px 3px 0px 0px rgba(155,49,53,1)
+          box-shadow: 0px 3px 0px 0px rgba(155,49,53,1)
+          font-family: 'Quicksand', sans-serif
+          font-weight: 500
+          font-size: 20px
+          border: 0
+          border-radius: 5px
+          padding: 10px 40px
+          color: white
+          margin-top: 20px
+          float: right
+        button:hover
+          background-color: #df3e45
+        button:focus
+          outline: none
+        .sent-msg
+          margin-top: 20px
+          line-height: 26px
+          overflow: hidden
+          // height: 0px
+          opacity: 0
+          color: #2a9d43
+
+.show
+  display: block!important
